@@ -24,9 +24,9 @@ function Display() {
         }
     }
 
-    // useEffect (() => {
-    //     getSpells()
-    // },[])
+    useEffect (() => {
+        getSpells()
+    },[])
 
   const allSpells = spells.map((spell) =>
     <section className="spell-card-wrapper" key={spell.id}>
@@ -40,12 +40,11 @@ function Display() {
       />
     </section>
   )
-    {/*{allSpells}*/}
+
 
   return(
     <section className="display-area">
-      {/*{allSpells}*/}
-        <div> display this </div>
+      {allSpells}
     </section>
   )
 }
