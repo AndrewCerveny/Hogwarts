@@ -5,9 +5,12 @@ import SpellCard from "../SpellCard/SpellCard";
 import "../App/App"
 import hogwartsPic from  "../../images/homepage-background.jpg"
 
+//                                           ISSUES:
+// "intro-wrapper Input" contains placeholder email which messed with UI upon loading... need to eliminate issue
+// "homepage-submit" has purple underline that needs to be taken away
+
 function Homepage({handleName}) {
     const [userName, setUserName] = useState('')
-
 
     return(
         <section className="welcome-area">

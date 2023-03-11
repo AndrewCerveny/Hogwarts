@@ -1,6 +1,9 @@
 import React from "react";
 import './Header.css'
 
+//                        ISSUES:
+// Doesn't display on other pages due to font-color being white
+// change "link-wrapper" container <div>'s to <Link>'s for functionality
 function Header() {
   return(
     <nav className="nav-area">
