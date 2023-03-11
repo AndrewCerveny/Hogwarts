@@ -8,6 +8,7 @@ import hogwartsPic from  "../../images/homepage-background.jpg"
 //                                           ISSUES:
 // "intro-wrapper Input" contains placeholder email which messed with UI upon loading... need to eliminate issue
 // "homepage-submit" has purple underline that needs to be taken away
+// need to get OverFlow: Hidden to work for the "welcome-area" container so the bottom part of image will be cut off at bottom due to the logo being annoying and unwanted
 
 function Homepage({handleName}) {
     const [userName, setUserName] = useState('')
