@@ -1,3 +1,8 @@
+@import './components/Display/Display.css';
+@import './components/DecisionPage/decisionPage.css';
+@import './components/Homepage/homepage.css';
+@import './components/Header/Header.css';
+
 *{
   margin:0;
   padding:0;

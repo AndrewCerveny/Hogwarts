@@ -1,0 +1,23 @@
+.nav-area {
+    position: absolute;
+    width: 90vw;
+    z-index: 999;
+    color: white;
+    top: 2%;
+    left: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.link-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.nav-link:hover {
+    border-bottom: 2px solid white;
+    cursor: pointer;
+}
