@@ -1,3 +1,6 @@
+@import './components/Display/Display.css';
+@import './components/DecisionPage/decisionPage.css';
+
 *{
   margin:0;
   padding:0;
