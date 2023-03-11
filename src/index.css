@@ -1,5 +1,6 @@
 @import './components/Display/Display.css';
 @import './components/DecisionPage/decisionPage.css';
+@import './components/Homepage/homepage.css';
 
 *{
   margin:0;
