@@ -12,9 +12,9 @@ function Header() {
         </div>
 
         <div className="link-wrapper">
+            <div className="nav-link">Home</div>
             <div className="nav-link">Spells</div>
             <div className="nav-link">Houses</div>
-            <div className="nav-link">Home</div>
             <div className="nav-link">Favorites</div>
         </div>
     </nav>

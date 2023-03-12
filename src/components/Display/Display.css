@@ -1,12 +1,18 @@
 .display-area{
   border:4px solid black; 
- margin-top: 5%;
+  margin-top: 5.5rem;
 }
 
 .spell-card-wrapper{
   border:1px solid black;
-  height:25%;
+  height:40%;
   width: 30%; 
-  margin: 1.2% 1%;
+  margin: 1rem 1rem;
   box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, .2)
+}
+
+.spells-area {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
