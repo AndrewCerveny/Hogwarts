@@ -3,6 +3,7 @@ import React from "react";
 import SpellCard from "../SpellCard/SpellCard";
 import {useEffect, useState} from "react";
 import cleanSpells from "../../util/cleaning";
+import Form from "../Form/Form";
 
 function Display() {
 
@@ -44,8 +45,14 @@ function Display() {
 
   return(
     <section className="display-area">
+      <section className="form-area">
+        <Form/>
+      </section>
+      <section className="spells-area">
       {allSpells}
-    </section>
+      </section>
+     
+  </section>
   )
 }
 export default Display;

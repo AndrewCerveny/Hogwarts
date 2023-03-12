@@ -2,6 +2,7 @@
 @import './components/DecisionPage/decisionPage.css';
 @import './components/Homepage/homepage.css';
 @import './components/Header/Header.css';
+@import './components/Form/Form.css';
 
 *{
   margin:0;
