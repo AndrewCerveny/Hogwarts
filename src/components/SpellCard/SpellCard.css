@@ -1,0 +1,19 @@
+.card-body-wrapper {
+
+}
+
+.card-body {
+    border: 1px solid black;
+    height: 300px;
+}
+
+.display-area{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-47%);
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 22% 22% 22% 22%;
+    gap: 25px;
+    width: 100%;
+}

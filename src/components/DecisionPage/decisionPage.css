@@ -1,6 +1,6 @@
 .decision-wrapper {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     margin-top: 20vh;
 }
 
@@ -9,7 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    border: 1px solid white;
     border-radius: 14px;
     box-shadow: 2px 2px 5px 0 rgba(0, 0, .2);
     width: 30vw;
@@ -17,15 +17,23 @@
 
 }
 
+.dlink-wrapper {
+    position: absolute;
+    display: flex;
+    gap: 50px;
+    z-index: 999;
+    margin-top: 200px;
+}
+
 .d-link {
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 2.5vw;
 }
 
 .spells-cont:hover,
 .house-cont:hover {
-    box-shadow: 3px 3px 3px 5px rgba(0, 0, .2);
+    box-shadow: 3px 3px 3px 5px rgba(255, 255, 255);
     cursor: pointer;
 }
 
