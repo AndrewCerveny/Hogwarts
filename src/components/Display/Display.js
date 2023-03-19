@@ -10,6 +10,8 @@ function Display() {
     const [spells , setSpells] = useState([])
     const [error, setError] = useState('')
 
+   
+
 
     const getSpells = async () => {
         const url = 'https://wizard-world-api.herokuapp.com/Spells'
@@ -41,17 +43,25 @@ function Display() {
       />
     </section>
   )
+ 
+ const handleClick = (e, category) => {
+  e.preventDefault()
+  const assortedSpells = spells.filter((spell) => spell.type === category)
+ setSpells(assortedSpells)
+ }
+
+
+
 
 
   return(
     <section className="display-area">
       <section className="form-area">
-        <Form/>
+        <Form spells={spells} selectClick={handleClick} />
       </section>
       <section className="spells-area">
-      {allSpells}
-      </section>
-     
+     {allSpells}
+      </section>   
   </section>
   )
 }

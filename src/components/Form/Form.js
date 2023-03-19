@@ -1,15 +1,31 @@
-import React from "react";
-import { useState } from "react";
+import { useState, } from "react";
 
-function Form(){
+function Form(props){
+  const [selectedCategory, setSelectedCategory] = useState ("")
   const [searchedSpell , setSearchedSpell] = useState("")
+ 
+const getTypes = () => {
+  const spellHolder = []
+  
+  props.spells.forEach((spell) => {
+   if(!spellHolder.includes(spell.type)){
+    spellHolder.push(spell.type)
+   }
+ 
+  })
+  return spellHolder.map((type, index) =>
+    <option key={index} value={type}> {type} </option>
+  )
+}
+
+
+
 
 
  return(
   <form className="form">
     <section className="searching-area"> 
       <input
-      type={Text}
       name="search"
       placeholder="search"
       value= {searchedSpell}
@@ -18,11 +34,10 @@ function Form(){
       <button> submit </button>
     </section>
     <section className="filter-area">
-     <select>
-        <option value="none" selected disabled hidden> Select a Category </option>
-        
+     <select onChange={(e) => setSelectedCategory(e.target.value)}>
+      {getTypes()}
       </select>
-      <button>Submit</button>
+      <button onClick={(e) => props.selectClick(e ,selectedCategory)}>Submit</button>
       <button>Clear</button>
     </section>
   </form>
