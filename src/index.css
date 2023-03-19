@@ -1,8 +1,9 @@
-@import './components/Display/Display.css';
+@import './components/DisplayHub/DisplayHub.css';
 @import './components/DecisionPage/decisionPage.css';
 @import './components/Homepage/homepage.css';
 @import './components/Header/Header.css';
 @import './components/Form/Form.css';
+@import './components/SpellsArea/SpellsArea.css';
 
 *{
   margin:0;

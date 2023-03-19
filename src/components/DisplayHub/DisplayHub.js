@@ -1,14 +1,15 @@
 import React from "react";
-// import './Display.css'
 import SpellCard from "../SpellCard/SpellCard";
 import {useEffect, useState} from "react";
 import cleanSpells from "../../util/cleaning";
 import Form from "../Form/Form";
+import SpellArea from "../SpellsArea/SpellsArea";
 
-function Display() {
+function DisplayHub() {
 
     const [spells , setSpells] = useState([])
     const [error, setError] = useState('')
+    const [spellCategory, setSpellCategory] = useState([])
 
    
 
@@ -31,27 +32,12 @@ function Display() {
         getSpells()
     },[])
 
-  const allSpells = spells.map((spell) =>
-    <section className="spell-card-wrapper" key={spell.id}>
-      <SpellCard
-        id={spell.id}
-        name={spell.name}
-        incantation={spell.incantation}
-        effect={spell.effect}
-        light={spell.light}
-        type={spell.type}
-      />
-    </section>
-  )
- 
- const handleClick = (e, category) => {
-  e.preventDefault()
-  const assortedSpells = spells.filter((spell) => spell.type === category)
- setSpells(assortedSpells)
- }
-
-
-
+  
+    const handleClick = (e, category) => {
+    e.preventDefault()
+   const assortedSpells = spells.filter((spell) => spell.type === category)
+    setSpellCategory(assortedSpells)
+  }
 
 
   return(
@@ -59,10 +45,10 @@ function Display() {
       <section className="form-area">
         <Form spells={spells} selectClick={handleClick} />
       </section>
-      <section className="spells-area">
-     {allSpells}
+      <section className="spells-containment">
+        <SpellArea spells={spells}/>
       </section>   
   </section>
   )
 }
-export default Display;
+export default DisplayHub;
