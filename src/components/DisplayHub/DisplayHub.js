@@ -1,5 +1,4 @@
 import React from "react";
-import SpellCard from "../SpellCard/SpellCard";
 import {useEffect, useState} from "react";
 import cleanSpells from "../../util/cleaning";
 import Form from "../Form/Form";
@@ -8,8 +7,8 @@ import SpellArea from "../SpellsArea/SpellsArea";
 function DisplayHub() {
 
     const [spells , setSpells] = useState([])
-    const [error, setError] = useState('')
     const [spellCategory, setSpellCategory] = useState([])
+    const [error, setError] = useState('')
 
    
 
@@ -39,14 +38,22 @@ function DisplayHub() {
     setSpellCategory(assortedSpells)
   }
 
+  const clearOut = () => {
+    setSpellCategory([])
+  }
+
+  
 
   return(
     <section className="display-area">
       <section className="form-area">
-        <Form spells={spells} selectClick={handleClick} />
+        <Form spells={spells} selectClick={handleClick} clearOut={clearOut}/>
       </section>
       <section className="spells-containment">
-        <SpellArea spells={spells}/>
+        {!spellCategory.length 
+        ? <SpellArea spells={spells}/> 
+        : <SpellArea spells={spellCategory} />
+        }
       </section>   
   </section>
   )

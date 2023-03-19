@@ -15,9 +15,14 @@ const getTypes = () => {
   })
   return spellHolder.map((type, index) =>
     <option key={index} value={type}> {type} </option>
+   
   )
 }
-
+ const handleClear = (e) => {
+  e.preventDefault()
+  setSelectedCategory("")
+  props.clearOut()
+ }
 
 
 
@@ -38,7 +43,7 @@ const getTypes = () => {
       {getTypes()}
       </select>
       <button onClick={(e) => props.selectClick(e ,selectedCategory)}>Submit</button>
-      <button>Clear</button>
+      <button onClick={(e) => handleClear(e)}>Clear</button>
     </section>
   </form>
  )
