@@ -8,6 +8,7 @@ function DisplayHub() {
 
     const [spells , setSpells] = useState([])
     const [spellCategory, setSpellCategory] = useState([])
+    const [desiredSearch, setDesiredSearch] = useState([])
     const [error, setError] = useState('')
 
    
@@ -42,12 +43,14 @@ function DisplayHub() {
     setSpellCategory([])
   }
 
+
   
+
 
   return(
     <section className="display-area">
       <section className="form-area">
-        <Form spells={spells} selectClick={handleClick} clearOut={clearOut}/>
+        <Form spells={spells} selectClick={handleClick} clearOut={clearOut} />
       </section>
       <section className="spells-containment">
         {!spellCategory.length 
