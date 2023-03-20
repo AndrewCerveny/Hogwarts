@@ -5,6 +5,7 @@ import Header from '../Header/Header';
 import Homepage from '../Homepage/Homepage.js'
 import DisplayHub from '../DisplayHub/DisplayHub';
 import DecisionPage from "../DecisionPage/decisionPage";
+import HouseHub from '../HouseHub/HouseHub';
 
 
 
@@ -24,7 +25,7 @@ function App() {
                      <Route path="/" element={<Homepage handleName={handleName}/>} />
                      <Route path="/display" element={<DisplayHub/>} />
                      <Route path="/decision" element={<DecisionPage user={personName} />} />
-                     {/* <Route path="/" element={<Homepage />} /> */}
+                     <Route path="/houses" element={<HouseHub/>} />
                      {/* <Route path="/" element={<Homepage />} /> */}
                  </Routes>
 

@@ -14,7 +14,7 @@ function Decision ({user}) {
                         Learn Spells
                     </section>
                 </Link>
-                <Link className="d-link">
+                <Link className="d-link" to={'/houses'}>
                     <section className="house-cont">
                         Discover Houses
                     </section>

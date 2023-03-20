@@ -12,4 +12,22 @@ function cleanSpells(array) {
   return alteredSet
 }
 
-export default cleanSpells
+function cleaningHouse(array){
+  const alteredHouse = array.map((house) => {
+    const constructedHome = {}
+    constructedHome.id = house.id
+    constructedHome.animal = house.animal
+    constructedHome.commonRoom= house.commonRoom
+    constructedHome.founder = house.founder
+    constructedHome.ghost = house.ghost
+    constructedHome.houseColors = house.houseColours
+    constructedHome.heads = house.heads
+    constructedHome.name = house.name
+    constructedHome.traits = house.traits
+    return constructedHome
+  })
+  return alteredHouse
+}
+
+
+export {cleanSpells, cleaningHouse} 

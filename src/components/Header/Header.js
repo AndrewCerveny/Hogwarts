@@ -1,5 +1,6 @@
 import React from "react";
 import './Header.css'
+import { Link } from "react-router-dom";
 
 //                        ISSUES:
 // Doesn't display on other pages due to font-color being white
@@ -12,9 +13,10 @@ function Header() {
         </div>
 
         <div className="link-wrapper">
-            <div className="nav-link">Home</div>
-            <div className="nav-link">Spells</div>
-            <div className="nav-link">Houses</div>
+          <Link to={'/'}><div className="nav-link">Home</div></Link>  
+           <Link to={'/display'}> <div className="nav-link">Spells</div></Link>
+          <Link to={'/houses'}> <div className="nav-link">Houses</div></Link>
+           <Link to={'/decision'}><div className="nav-link">Decision</div></Link> 
             <div className="nav-link">Favorites</div>
         </div>
     </nav>

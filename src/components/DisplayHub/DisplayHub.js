@@ -1,6 +1,6 @@
 import React from "react";
 import {useEffect, useState} from "react";
-import cleanSpells from "../../util/cleaning";
+import { cleanSpells } from "../../util/cleaning";
 import Form from "../Form/Form";
 import SpellArea from "../SpellsArea/SpellsArea";
 

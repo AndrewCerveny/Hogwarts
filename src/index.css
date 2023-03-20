@@ -4,6 +4,9 @@
 @import './components/Header/Header.css';
 @import './components/Form/Form.css';
 @import './components/SpellsArea/SpellsArea.css';
+@import './components//HouseHub/HouseHub.css'; 
+@import './components/HouseDisplay/HouseDisplay.css';
+@import './components/HouseCard/HouseCard.css'; 
 
 *{
   margin:0;
