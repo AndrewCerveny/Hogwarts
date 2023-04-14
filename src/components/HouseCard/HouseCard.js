@@ -1,4 +1,5 @@
 import React from "react";
+import './HouseCard.css'
 
 const HouseCard = ({animal, commonRoom,founder,ghost,heads,houseColors,name,traits}) => {
 

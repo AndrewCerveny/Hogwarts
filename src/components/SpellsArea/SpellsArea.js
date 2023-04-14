@@ -1,5 +1,6 @@
 import React from "react";
 import SpellCard from "../SpellCard/SpellCard";
+import './SpellsArea.css'
 
 const SpellArea = ({spells}) => {
   
@@ -19,7 +20,6 @@ const SpellArea = ({spells}) => {
  
   return (
     <section className='spells-displayed'>
-      {/* <p>spells here </p> */}
       {allSpells}
     </section>
  )

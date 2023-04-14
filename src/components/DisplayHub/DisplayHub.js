@@ -2,7 +2,8 @@ import React from "react";
 import {useEffect, useState} from "react";
 import { cleanSpells } from "../../util/cleaning";
 import Form from "../Form/Form";
-import SpellArea from "../SpellsArea/SpellsArea";
+import SpellArea from "../SpellsArea/SpellsArea"
+import './DisplayHub.css'
 
 function DisplayHub() {
 

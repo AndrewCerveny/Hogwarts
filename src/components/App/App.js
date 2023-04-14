@@ -1,11 +1,14 @@
 import './App.css';
 import { Route, Routes } from "react-router-dom"
 import { useState } from 'react';
-import Header from '../Header/Header';
-import Homepage from '../Homepage/Homepage.js'
-import DisplayHub from '../DisplayHub/DisplayHub';
-import DecisionPage from "../DecisionPage/decisionPage";
-import HouseHub from '../HouseHub/HouseHub';
+import Navbar from '../Navbar/Navbar'
+import Homepage from '../Pages/Homepage/Homepage'
+import HogwartsPage from '../Pages/HogwartsPage/HogwartsPage';
+import CommonRoom from '../Pages/CommonRoom/CommonRoom';
+
+// import DisplayHub from '../DisplayHub/DisplayHub';
+// import DecisionPage from '../Pages/DecisionPage/decisionPage'
+// import HouseHub from '../HouseHub/HouseHub';
 
 
 
@@ -19,13 +22,14 @@ function App() {
  
   return (
       <>
-          <Header />
+          <Navbar/>
              <main className='App'>
                  <Routes>
-                     <Route path="/" element={<Homepage handleName={handleName}/>} />
-                     <Route path="/display" element={<DisplayHub/>} />
-                     <Route path="/decision" element={<DecisionPage user={personName} />} />
-                     <Route path="/houses" element={<HouseHub/>} />
+                     <Route path="/" element={<Homepage/>} />
+                     <Route path='/hogwarts' element={<HogwartsPage/>}/>
+                     <Route path="/commons" element={<CommonRoom/>} />
+                     {/* <Route path="/decision" element={<DecisionPage user={personName} />} /> */}
+                     {/* <Route path="/houses" element={<HouseHub/>} /> */}
                      {/* <Route path="/" element={<Homepage />} /> */}
                  </Routes>
 

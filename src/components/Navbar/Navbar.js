@@ -1,11 +1,11 @@
 import React from "react";
-import './Header.css'
+import './Navbar.css'
 import { Link } from "react-router-dom";
 
 //                        ISSUES:
 // Doesn't display on other pages due to font-color being white
 // change "link-wrapper" container <div>'s to <Link>'s for functionality
-function Header() {
+function Navbar() {
   return(
     <nav className="nav-area">
         <div className="title-wrapper">
@@ -22,4 +22,4 @@ function Header() {
     </nav>
   )
 }
-export default Header
+export default Navbar
