@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom"
 import './decisionPage.css'
+import classRoom from '../../../images/hpClassRoom.jpg'
 
 
 function Decision () {
@@ -8,7 +9,8 @@ function Decision () {
 
 
     return (
-        <main className="decision-wrapper">
+        <main className="decision-area">
+            <section className="decision-wrapper">
                 <Link className="d-link" to="/display" >
                     <section className="spells-cont">
                         Learn Spells
@@ -19,6 +21,7 @@ function Decision () {
                         Discover Houses
                     </section>
                 </Link>
+            </section>
         </main>
     )
 }
