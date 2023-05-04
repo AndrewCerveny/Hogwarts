@@ -17,7 +17,20 @@
     height:100%;
 }
 
-.spells-cont,
+.spells-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 14px;
+    box-shadow: 2px 2px 5px 0 rgba(0, 0, .2);
+    width: 30vw;
+    height: 30vh;
+    background-image: url('../../../images/spells-pic.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    opacity:0;
+}
 .house-cont {
     display: flex;
     justify-content: center;
@@ -26,20 +39,30 @@
     border-radius: 14px;
     box-shadow: 2px 2px 5px 0 rgba(0, 0, .2);
     width: 30vw;
-    height: 20vh;
-
+    height: 30vh;
+    background-image: url('../../../images/hogwarts-house-crest.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    opacity: 0;
+    
 }
 
 .d-link {
     text-decoration: none;
     color: black;
     font-size: 2.5vw;
+    width: auto;
+   
 }
 
 .spells-cont:hover,
 .house-cont:hover {
     box-shadow: 3px 3px 3px 5px rgba(0, 0, .2);
     cursor: pointer;
+    background-color: white;
+    color:white;
+    opacity: .85;
+    cursor: grab;
 }
 
 .user-name {
