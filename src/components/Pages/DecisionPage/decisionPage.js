@@ -11,7 +11,7 @@ function Decision () {
     return (
         <main className="decision-area">
             <section className="decision-wrapper">
-                <Link className="d-link" to="/display" >
+                <Link className="d-link" to="/spellHub" >
                     <section className="spells-cont">
                         Learn Spells
                     </section>

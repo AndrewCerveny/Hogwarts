@@ -9,7 +9,6 @@ function SpellCard({id,name,incantation,effect,light,type}) {
     <h3> Incantation: {incantation}</h3>
     <p> Effect: {effect}</p>
     <p> Wand color omit: {light}</p>
-    <button>Save Spell</button>
   </section>
   )
 }

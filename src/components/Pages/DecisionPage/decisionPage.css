@@ -23,7 +23,7 @@
     align-items: center;
     border: 1px solid black;
     border-radius: 14px;
-    box-shadow: 2px 2px 5px 0 rgba(0, 0, .2);
+    box-shadow: 2px 2px 3px 0 rgba(0, 0, .2);
     width: 30vw;
     height: 30vh;
     background-image: url('../../../images/spells-pic.jpg');
@@ -37,14 +37,13 @@
     align-items: center;
     border: 1px solid black;
     border-radius: 14px;
-    box-shadow: 2px 2px 5px 0 rgba(0, 0, .2);
+    box-shadow: 2px 2px 3px 0 rgba(0, 0, .2);
     width: 30vw;
     height: 30vh;
     background-image: url('../../../images/hogwarts-house-crest.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    opacity: 0;
-    
+    opacity: 0;  
 }
 
 .d-link {

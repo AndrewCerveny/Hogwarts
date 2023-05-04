@@ -5,8 +5,7 @@ import Navbar from '../Navbar/Navbar'
 import Homepage from '../Pages/Homepage/Homepage'
 import HogwartsPage from '../Pages/HogwartsPage/HogwartsPage';
 import CommonRoom from '../Pages/CommonRoom/CommonRoom';
-
-// import DisplayHub from '../DisplayHub/DisplayHub';
+import SpellsHub from '../Pages/SpellsHub/SpellsHub'
 import DecisionPage from '../Pages/DecisionPage/decisionPage'
 // import HouseHub from '../HouseHub/HouseHub';
 
@@ -29,6 +28,7 @@ function App() {
                      <Route path='/hogwarts' element={<HogwartsPage getUser={handleName}/>}/>
                      <Route path="/commons" element={<CommonRoom user={personName}/>} />
                      <Route path="/decision" element={<DecisionPage />} />
+                     <Route path="/spellHub" element={<SpellsHub/>} />
                      {/* <Route path="/houses" element={<HouseHub/>} /> */}
                      {/* <Route path="/" element={<Homepage />} /> */}
                  </Routes>

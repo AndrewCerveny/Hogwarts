@@ -1,11 +1,11 @@
 import React from "react";
 import {useEffect, useState} from "react";
-import { cleanSpells } from "../../util/cleaning";
-import Form from "../Form/Form";
-import SpellArea from "../SpellsArea/SpellsArea"
-import './DisplayHub.css'
+import { cleanSpells } from "../../../util/cleaning";
+import Form from "../../Form/Form";
+import SpellArea from "../../SpellsArea/SpellsArea";
+import './SpellsHub.css'
 
-function DisplayHub() {
+function SpellsHub() {
 
     const [spells , setSpells] = useState([])
     const [spellCategory, setSpellCategory] = useState([])
@@ -62,4 +62,4 @@ function DisplayHub() {
   </section>
   )
 }
-export default DisplayHub;
+export default SpellsHub;
