@@ -3,13 +3,12 @@ import { Link } from "react-router-dom"
 import './decisionPage.css'
 
 
-function Decision ({user}) {
+function Decision () {
 
 
 
     return (
         <main className="decision-wrapper">
-            <h2 className="user-name">Welcome: {user} </h2>
                 <Link className="d-link" to="/display" >
                     <section className="spells-cont">
                         Learn Spells

@@ -7,7 +7,7 @@ import HogwartsPage from '../Pages/HogwartsPage/HogwartsPage';
 import CommonRoom from '../Pages/CommonRoom/CommonRoom';
 
 // import DisplayHub from '../DisplayHub/DisplayHub';
-// import DecisionPage from '../Pages/DecisionPage/decisionPage'
+import DecisionPage from '../Pages/DecisionPage/decisionPage'
 // import HouseHub from '../HouseHub/HouseHub';
 
 
@@ -26,9 +26,9 @@ function App() {
              <main className='App'>
                  <Routes>
                      <Route path="/" element={<Homepage/>} />
-                     <Route path='/hogwarts' element={<HogwartsPage/>}/>
-                     <Route path="/commons" element={<CommonRoom/>} />
-                     {/* <Route path="/decision" element={<DecisionPage user={personName} />} /> */}
+                     <Route path='/hogwarts' element={<HogwartsPage getUser={handleName}/>}/>
+                     <Route path="/commons" element={<CommonRoom user={personName}/>} />
+                     <Route path="/decision" element={<DecisionPage />} />
                      {/* <Route path="/houses" element={<HouseHub/>} /> */}
                      {/* <Route path="/" element={<Homepage />} /> */}
                  </Routes>

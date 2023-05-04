@@ -4,7 +4,7 @@ import hogwarts from '../../../images/Hogwarts.webp'
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-const HogwartsPage = () => {
+const HogwartsPage = ({getUser}) => {
   const [userName , setUserName] = useState('')
 
   return(
@@ -22,7 +22,7 @@ const HogwartsPage = () => {
     </section>
       <Link to="/commons">
         <div className="hogwarts-sub" >
-          <button className="hogwart-enter"> Enter </button>
+          <button className="hogwart-enter" onClick={() => getUser(userName)}> Enter </button>
         </div>
       </Link>
   </section>)

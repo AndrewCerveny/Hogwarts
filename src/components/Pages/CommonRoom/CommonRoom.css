@@ -30,3 +30,9 @@
   justify-content: center;
   align-items: center;
 }
+.welcome-user{
+  position: absolute;
+  top:30%;
+  left:43%;
+  color:white;
+}
