@@ -7,6 +7,7 @@ import HogwartsPage from '../Pages/HogwartsPage/HogwartsPage';
 import CommonRoom from '../Pages/CommonRoom/CommonRoom';
 import SpellsHub from '../Pages/SpellsHub/SpellsHub'
 import DecisionPage from '../Pages/DecisionPage/decisionPage'
+import Requirement from '../Pages/Requirement/Requirement'
 // import HouseHub from '../HouseHub/HouseHub';
 
 
@@ -29,7 +30,7 @@ function App() {
                      <Route path="/commons" element={<CommonRoom user={personName}/>} />
                      <Route path="/decision" element={<DecisionPage />} />
                      <Route path="/spellHub" element={<SpellsHub/>} />
-                     {/* <Route path="/houses" element={<HouseHub/>} /> */}
+                     <Route path="/requirements" element={<Requirement/>} />
                      {/* <Route path="/" element={<Homepage />} /> */}
                  </Routes>
 

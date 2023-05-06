@@ -15,7 +15,7 @@ const CommonRoom = ({user}) => {
          <Link to='/decision'> <h2> Go to class </h2></Link> 
           </div>
           <div className="requirement-wrapper">
-          <Link to='/roomOfRequirement'> <h2> Go To Room of Requirement</h2></Link> 
+          <Link to='/requirements'> <h2> Go To Room of Requirement</h2></Link> 
           </div>
       </section>
    </section>
