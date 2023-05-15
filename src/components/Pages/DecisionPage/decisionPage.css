@@ -1,0 +1,76 @@
+.decision-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../../images/hpClassRoom.jpg');
+    background-image: cover;
+    width:100vw;
+    height:100vh;
+}
+
+.decision-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30vh;
+    width: 100%;
+    height:100%;
+}
+
+.spells-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 14px;
+    box-shadow: 2px 2px 3px 0 rgba(0, 0, .2);
+    width: 30vw;
+    height: 30vh;
+    background-image: url('../../../images/spells-pic.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    opacity:0;
+}
+.house-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 14px;
+    box-shadow: 2px 2px 3px 0 rgba(0, 0, .2);
+    width: 30vw;
+    height: 30vh;
+    background-image: url('../../../images/hogwarts-house-crest.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    opacity: 0;  
+}
+
+.d-link {
+    text-decoration: none;
+    color: black;
+    font-size: 2.5vw;
+    width: auto;
+   
+}
+
+.spells-cont:hover,
+.house-cont:hover {
+    box-shadow: 3px 3px 3px 5px rgba(0, 0, .2);
+    cursor: pointer;
+    background-color: white;
+    color:white;
+    opacity: .85;
+    cursor: grab;
+}
+
+.user-name {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.room-img{
+    height:100vh;
+}

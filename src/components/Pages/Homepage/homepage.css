@@ -1,0 +1,30 @@
+
+.diagon-alley {
+    height: 100vh;
+    width: 100vw;
+}
+.d-alley{
+    height: 100vh;
+    width: 100vw;
+}
+.enter-site{
+    position: absolute;
+    width: 18rem;
+    height: 12rem;
+    background-color: rgba(9, 9, 9, 0.872);
+    top:50%;
+    left:40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 45%;
+}
+.hog-link{
+    text-decoration: none;
+    color:rgba(218, 165, 32, 0.675)
+}
+
+.enter-site:hover{
+    background-color: rgba(239, 243, 243, 0.807);
+    color:black; 
+}

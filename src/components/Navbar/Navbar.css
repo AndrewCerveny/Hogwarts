@@ -1,20 +1,24 @@
 .nav-area {
     position: absolute;
-    width: 90vw;
+    width: 95vw;
     z-index: 999;
-    color: white;
+    height:6%;
+    color: goldenrod;
     top: 2%;
     left: 2%;
     display: flex;
     justify-content: space-between;
+    background-color:black;
 }
 
 .link-wrapper {
     display: flex;
     align-items: center;
-    gap: 50px;
+    justify-content: space-evenly;
+    border:1px red;
     font-size: 20px;
     font-style: italic;
+    width: 30%;
 }
 
 .nav-link:hover {

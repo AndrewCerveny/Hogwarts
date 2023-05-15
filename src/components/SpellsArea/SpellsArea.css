@@ -1,0 +1,15 @@
+.spell-card-wrapper{
+  border:1px solid black;
+  height:30%;
+  width: 20%; 
+  margin: 1rem 2rem;
+  box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, .2)
+}
+.spells-displayed {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100vw;
+  overflow-y: auto;
+  height:100vh;
+}

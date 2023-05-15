@@ -1,23 +1,27 @@
 import React from "react";
 import { Link } from "react-router-dom"
+import './decisionPage.css'
 
-function Decision ({user}) {
+
+
+function Decision () {
 
 
 
     return (
-        <main className="decision-wrapper">
-            <h2 className="user-name">Welcome: {user}</h2>
-                <Link className="d-link" to="/display" >
+        <main className="decision-area">
+            <section className="decision-wrapper">
+                <Link className="d-link" to="/spellHub" >
                     <section className="spells-cont">
                         Learn Spells
                     </section>
                 </Link>
-                <Link className="d-link">
+                <Link className="d-link" to={'/houses'}>
                     <section className="house-cont">
                         Discover Houses
                     </section>
                 </Link>
+            </section>
         </main>
     )
 }
