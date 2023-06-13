@@ -20,7 +20,7 @@
     width: 45%;  
 }
 
-.nav-link{ 
+.link{ 
     color:lightgray;
     text-decoration: none; 
 }
@@ -28,5 +28,4 @@
 .nav-link:hover {
     border-bottom: 4px solid rgb(225, 128, 246);
     cursor: pointer;
-    text-decoration: none;
 }

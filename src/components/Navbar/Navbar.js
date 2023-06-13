@@ -11,12 +11,12 @@ function Navbar() {
         </div>
 
         <div className="link-wrapper">
-          <Link to={'/'}><div className="nav-link">Home</div></Link>  
-          <Link to={'/commons'}> <div className="nav-link">Commons</div></Link>
-          <Link to={'/decision'}> <div className="nav-link">Agenda</div></Link>
-          <Link to={'/spellHub'}><div className="nav-link">Spells</div></Link>
-          <Link to={'/houses'}><div className="nav-link"> Houses</div></Link>
-          <Link to={'/requirements'}><div className="nav-link"> Requirement</div></Link>       
+          <Link className='link' to={'/'}><div className="nav-link">Home</div></Link>  
+          <Link className='link' to={'/commons'}> <div className="nav-link">Commons</div></Link>
+          <Link className='link' to={'/decision'}> <div className="nav-link">Agenda</div></Link>
+          <Link  className='link'to={'/spellHub'}><div className="nav-link">Spells</div></Link>
+          <Link className='link' to={'/houses'}><div className="nav-link"> Houses</div></Link>
+          <Link className='link' to={'/requirements'}><div className="nav-link"> Requirement</div></Link>       
         </div>
     </nav>
   )
