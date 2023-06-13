@@ -5,7 +5,7 @@ import './SingleWish.css'
 const SingleWish = ({id, wish,description}) => {
 
   return(
-    <section>
+    <section className="wish-card">
       <h2>{wish}</h2>
       <h3>{description}</h3>
       <button>🗑️</button>
