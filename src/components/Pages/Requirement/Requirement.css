@@ -1,6 +1,6 @@
 .requirement-body{
-background-image: url('../../../images/requirement.jpg');
-background-size: cover;
-height: 100vh;
-background-repeat: no-repeat;
+  height: 100vh;
+  background-image: url('../../../images/requirement.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }

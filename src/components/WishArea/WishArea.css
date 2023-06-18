@@ -1,10 +1,12 @@
 .wish-area {
   border:1px solid black;
-  margin-top: 35%;
+  margin-top: 15%;
   width:85%;
-  height:20vh; 
+  height:45vh; 
   display: flex;
   margin-left: 7%;
   flex-wrap: wrap;
   overflow-x: scroll;
+  background-color: rgba(255, 248, 220, 0.242);
+  border-radius: 8px;
 }

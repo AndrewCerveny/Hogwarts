@@ -1,10 +1,24 @@
 .wish-card{
-  border:1px solid black; 
   display: flex;
   flex-direction: column;
-  width:18rem;
+  width:17rem;
   height:65%;
   margin-top: 5%;
   margin-left: 1rem;
   justify-content: space-evenly;
+  background-color: rgba(240, 248, 255, 0.576);
+  align-items: center;
+  border-radius: 9px;
+}
+.trash{
+  padding: 1%;
+  font-size: larger;
+  width: 70%;
+  border-radius: 9px;
+}
+.trash:focus{
+  background-color: black;
+}
+.wish-card:hover{
+  background-color: rgba(0, 255, 255, 0.439);
 }
