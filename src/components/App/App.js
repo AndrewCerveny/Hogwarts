@@ -31,9 +31,7 @@ function App() {
                      <Route path="/decision" element={<DecisionPage />} />
                      <Route path="/spellHub" element={<SpellsHub/>} />
                      <Route path="/requirements" element={<Requirement/>} />
-                     {/* <Route path="/" element={<Homepage />} /> */}
                  </Routes>
-
              </main>
     </>
   )
