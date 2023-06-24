@@ -10,15 +10,16 @@ const Requirement = () => {
     {id:3, wish:'Boggarts', description: 'Creature Transforms Into Worst Fears '},
     {id:4, wish:'Pixies', description: 'Target Practice'}
   ])
-  // const handleDemand = (e) => {
-  //   e.target.name === "demand" ? setDemand(e.target.value) : setDescription(e.target.value)
-  //   const {name, value} = e.target
-  // }
+  const handleRequest = (request) => {
+    const updateWishes = setWishes([...wishes, request])
+    return updateWishes
+  }
+
 
   
   return(
     <section className="requirement-body">
-      <RequirementForm  />
+      <RequirementForm  handler={handleRequest}/>
       <WishArea wishes={wishes}/>
     </section>
   )
