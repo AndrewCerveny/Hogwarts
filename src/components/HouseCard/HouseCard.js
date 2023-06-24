@@ -33,7 +33,7 @@ const allNames = heads.map((head) => {
       <p>{person2Fn}, {person2Ln}</p>
     </h3>
     <h3> Ghost: {ghost}</h3>
-    <h3>  Colors:{houseColors}</h3>
+    <h3> Colors:{houseColors}</h3>
     <h2> Traits</h2>
     <p>{makeString}</p>
   </section>
