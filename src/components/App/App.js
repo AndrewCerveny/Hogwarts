@@ -8,7 +8,7 @@ import CommonRoom from '../Pages/CommonRoom/CommonRoom';
 import SpellsHub from '../Pages/SpellsHub/SpellsHub'
 import DecisionPage from '../Pages/DecisionPage/decisionPage'
 import Requirement from '../Pages/Requirement/Requirement'
-// import HouseHub from '../HouseHub/HouseHub';
+import HouseHub from '../HouseHub/HouseHub';
 
 
 
@@ -30,6 +30,7 @@ function App() {
                      <Route path="/commons" element={<CommonRoom user={personName}/>} />
                      <Route path="/decision" element={<DecisionPage />} />
                      <Route path="/spellHub" element={<SpellsHub/>} />
+                     <Route path='/houseHome'element={<HouseHub/>}/>
                      <Route path="/requirements" element={<Requirement/>} />
                  </Routes>
              </main>
