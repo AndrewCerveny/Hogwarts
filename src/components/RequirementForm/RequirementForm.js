@@ -19,6 +19,12 @@ const handleSubmit = (demand, description, e) => {
       description: description
   }
   handler(request)
+  clearForm(demand, description)
+}
+const clearForm = () => {
+  setDemand('') 
+  setDescription('')
+  return 
 }
   return(
   <form className="req-form">
