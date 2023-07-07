@@ -26,11 +26,19 @@ useEffect(()=> {
 },[])
 
 const createList = (arrayOfHouses) => {
- const getTraitName =  arrayOfHouses.reduce((arr, house) => {
-   const getDeeperTraits = house.traits.map((trait) => trait.name)
-   arr += getDeeperTraits
+ const getTraitName =  arrayOfHouses.reduce((arr, house) => {  
+   const getDeeperTraits = house.traits.map(trait => {
+    const houseFacts = 
+    { traits:trait.name, 
+      houseName:house.name,
+      key:Date.now()
+    }
+    return houseFacts
+   })
+   arr.push(getDeeperTraits)
   return arr
  },[])
+ console.log("DABOOMBA", getTraitName);
  return getTraitName
 }
 
@@ -41,7 +49,7 @@ const createList = (arrayOfHouses) => {
     </section>
     <form className="house-test">
       <label> What describes you?  </label>
-        {createList(houses)} 
+        {/* {createList(houses)}  */}
         <button type="submit"> Submit </button>
     </form>
 
