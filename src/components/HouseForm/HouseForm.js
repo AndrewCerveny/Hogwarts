@@ -10,7 +10,6 @@ const HouseForm = ({houses}) => {
 
 
 const getFormInfo = (houses) => {
-  
   const getHouseDetails = houses.map((house) => {
    const houseCont = {}
    houseCont.house = house.name 
@@ -24,13 +23,16 @@ const getFormInfo = (houses) => {
 
 useEffect(()=> {
   getFormInfo(houses)
- 
 },[])
 
-
-
- 
-
+const createList = (arrayOfHouses) => {
+ const getTraitName =  arrayOfHouses.reduce((arr, house) => {
+   const getDeeperTraits = house.traits.map((trait) => trait.name)
+   arr += getDeeperTraits
+  return arr
+ },[])
+ return getTraitName
+}
 
 
   return(<section className="house-form-area">
@@ -39,21 +41,7 @@ useEffect(()=> {
     </section>
     <form className="house-test">
       <label> What describes you?  </label>
-        <label>
-          <input type="checkbox"  />
-            Traits go here 
-        </label>
-        <label>
-          <input type="checkbox"  />
-            Traits go here 
-          </label> 
-          <label>
-          <input type="checkbox" />
-            Traits go here 
-        </label> <label>
-          <input type="checkbox" />
-            Traits go here 
-        </label>
+        {createList(houses)} 
         <button type="submit"> Submit </button>
     </form>
 
