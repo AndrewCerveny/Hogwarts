@@ -33,7 +33,7 @@ const HouseHub = () => {
 
     return(
       <section>
-        <HouseForm houses={houseStats}/>
+        <HouseForm houseData={houseStats}/>
       </section>
     )
 
