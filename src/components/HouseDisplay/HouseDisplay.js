@@ -1,5 +1,5 @@
 import React from "react";
-import HouseCard from "../HouseCard/HouseCard";
+import HouseCard from "../HouseTest/HouseCard";
 import './HouseDisplay.css'
 
 const HouseDisplay = ({houses}) => {

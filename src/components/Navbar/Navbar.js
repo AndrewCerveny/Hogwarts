@@ -15,7 +15,7 @@ function Navbar() {
           <Link className='link' to={'/commons'}> <div className="nav-link">Commons</div></Link>
           <Link className='link' to={'/decision'}> <div className="nav-link">Agenda</div></Link>
           <Link  className='link'to={'/spellHub'}><div className="nav-link">Spells</div></Link>
-          <Link className='link' to={'/houses'}><div className="nav-link"> Houses</div></Link>
+          <Link className='link' to={'/houseHome'}><div className="nav-link"> Houses</div></Link>
           <Link className='link' to={'/requirements'}><div className="nav-link"> Requirement</div></Link>       
         </div>
     </nav>

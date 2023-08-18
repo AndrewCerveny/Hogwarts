@@ -1,0 +1,28 @@
+.house-form-area{
+  border: 3px solid black;
+  height:100vh;
+  width: auto;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.house-test{
+  position: absolute;
+  border: 3px solid black;
+  height: 74%;
+  width: 45%;
+  margin-top: 7%;
+  left:3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.sorting-hat{
+  border:3px solid green;
+  position: absolute;
+  right:3%;
+  height:74%;
+  width: 45%;
+  margin-top: 7%;
+}
